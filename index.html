@@ -1,0 +1,366 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panadería San Cayetano</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/San-Cayetano.ico" type="image/ico">
+        <!-- Metatags SEO-->
+        <meta name="description" content="Esta página web está dedicada a una Panadería Artesanal llamada San Cayetano que se ubica en Gobernador Gregores, provincia de Santa Cruz, Argentina. Es de carácter informativo acerca del origen del negocio, el menú, una pequeña galería, reseñas de compradores, un mapa de ubicación geográfica y un contacto.">
+        <meta name="keywords" content="panaderia,panadería,pan,cafe,facturas,medialunas,tortafritas,factura,medialuna,gregores,gdor gregores,gobernador gregores,patagonia,santa cruz,calafate,san cayetano">
+        <meta name="author" content="Juan Atencio">
+
+        <!-- Open Graph (para WhatsApp, Facebook, etc.) -->
+        <meta property="og:title" content="Panadería San Cayetano">
+        <meta property="og:description" content="Estamos en Gobernador Gregores, corazón geográfico de la provincia de Santa Cruz. Desde 2002 abrimos nuestras puertas para los vecinos que nos eligen cada día y somos el punto de encuentro ideal para quienes viajan por la región.">
+        <meta property="og:image" content="https://panaderiasancayetano.com/images/screen-metatags.png">
+        <meta property="og:url" content="https://panaderiasancayetano.com">
+        <meta property="og:type" content="website">
+
+
+        <!-- Preload solo Poppins-Regular y Poppins-Bold (si son las usadas en hero/LCP) -->
+        <link rel="preload" href="/fonts/fonts-woff2/Miniver.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/fonts/fonts-woff2/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/fonts/fonts-woff2/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/fonts/fonts-woff2/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/fonts/fonts-woff2/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="stylesheet" href="fonts.css">
+
+        <!-- Linking Swiper CSS -->
+        <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+
+        <link rel="stylesheet" href= "style.css">
+    </head>
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar section-content" role="navigation" aria-label="Menú principal">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Panadería San Cayetano</h2>
+            </a>
+            <ul id="site-nav" class="nav-list">
+                <li class="nav-close">
+                    <button id="close_navbar-button" class="fa-solid fa-xmark" type="button" aria-label="Cerrar menú de navegación" aria-controls="site-nav" aria-expanded="true" title="Cerrar menú"></button>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Reseñas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#location" class="nav-link">Local</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            
+            <button id="open_navbar-button" class="fa-solid fa-bars" type="button" aria-label="Abrir menú de Navegación" aria-controls="site-nav" aria-expanded="false" title="Abrir menú"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Panadería artesanal</h2>
+                    <h3 class="subtitle">Café, panificados y pastelería hecha a mano para locales y viajeros</h3>
+                    <p class="description">Ubicados en Gobernador Gregores, te esperamos para que pruebes nuestras delicias artesanales acompañadas de un buen café calentito.</p>
+                    <div class="buttons">
+                        <a href="#menu" class="button order-now">Ver productos</a>
+                        <a href="#contact" class="button contact-us">Contactános</a>
+                    </div>
+                </div>
+                <picture class="hero-image-wrapper">
+                    <source srcset="images/san-cayetano-xs.jpg" media="(max-width: 600px)">
+                    <img src="images/san-cayetano-small.jpg" fetchpriority="high"  alt="hero-image">
+                </picture>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about-section" id="about">
+            <h2 class="section-title">Nosotros</h2>
+            <div class="section-content">
+                <ul class="about-list">
+                    <li class="about-item">
+                        <!-- Card 1: Inicios -->
+                        <div class="about-card">
+                            <picture class="about-image-wrapper">
+                                <source srcset="images/inicios-small.jpg" media="(max-width: 600px)">
+                                <img src="images/inicios.jpg" alt="about-image">
+                            </picture>
+                            <div class="about-text">
+                                <span class="card-title">Inicios</span>
+                                <p class="text">La Panadería San Cayetano abre sus puertas en el año 2002 en Gobernador Gregores, corazón de la provincia de Santa Cruz. 
+                                Nuestro nombre rinde homenaje al patrono del pan y el trabajo.</p>
+                            </div>  
+                        </div>
+                    </li>
+                    <li class="about-item">
+                        <!-- Card 2: Actualidad-->
+                        <div class="about-card">
+                            <picture class="about-image-wrapper">
+                                <source srcset="images/us-xs.jpg" media="(max-width: 600px)">
+                                <img src="images/us.jpg" alt="about-image">
+                            </picture>
+                            <div class="about-text">
+                                <span class="card-title">Hoy</span>
+                                <p class="text">Cada día trabajamos con dedicación para acompañar a nuestros vecinos y recibir a los turistas que viajan hacia El Calafate y otros rincones de la Patagonia, ofreciendo el sabor de nuestras especialidades artesanales.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+                    <div class="social-link-list">
+                    <a href="https://www.facebook.com/profile.php?id=61561064978610" target="_blank" class="social-link facebook" aria-label="Facebook de Panadería San Cayetano"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/panaderiasancayetano25?igsh=NGhhMDBrd2k3OG8=" target="_blank" class="social-link instagram" aria-label="Instagram de Panadería San Cayetano"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="social-link twitter" aria-label="Twitter de Panadería San Cayetano"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu section -->
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Nuestros productos</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <picture class="menu-image-wrapper">
+                            <source srcset="images/media-small.png" media="(max-width: 480px)">
+                            <img src="images/media-medium.png" alt="medialuna-menu-image" loading="lazy">
+                        </picture>
+                        <h3 class="name">Medialunas</h3>
+                        <p class="text">Clásicas medialunas argentinas, tiernas y doradas, con un delicado sabor a manteca.</p>
+                    </li>
+                    <li class="menu-item">
+                        <picture class="menu-image-wrapper">
+                            <source srcset="images/pan-franchute-xs.png" media="(max-width: 480px)">
+                            <img src="images/pan-frances-1.png" alt="pan-frances_menu-image" loading="lazy">
+                        </picture>
+                        <h3 class="name">Pan francés</h3>
+                        <p class="text">Pan crocante por fuera y suave por dentro, horneado a diario con receta tradicional.</p>
+                    </li>
+                    <li class="menu-item">
+                        <picture class="menu-image-wrapper">
+                            <source srcset="images/torta-frita-small.png" media="(max-width: 480px)">
+                            <img src="images/torta-frita-m.png" alt="torta-frita_menu-image" loading="lazy">
+                        </picture>
+                        <h3 class="name">Tortas fritas</h3>
+                        <p class="text">Crujientes y doradas, ideales para compartir en días de lluvia con un buen mate.</p>
+                    </li>
+                    <li class="menu-item">
+                        <picture class="menu-image-wrapper">
+                            <source srcset="images/alfajor-maicena-small.png" media="(max-width: 480px)">
+                            <img src="images/alf_maicena-ia-2.png" alt="alfajor-maicena_menu-image" loading="lazy">
+                        </picture>
+                        <h3 class="name">Alfajores de maicena</h3>
+                        <p class="text">Suaves y delicados, rellenos con dulce de leche y espolvoreados con coco rallado.</p>
+                    </li>
+                    <li class="menu-item">
+                        <picture class="menu-image-wrapper">
+                            <source srcset="images/donut-xs.png" media="(max-width: 480px)">
+                            <img src="images/donut-medium.png" alt="donut_menu-image" loading="lazy">
+                        </picture>
+                        <h3 class="name">Donuts</h3>
+                        <p class="text">Deliciosa donut artesanal, suave y esponjosa, cubierta con un brillante glaseado de vainilla.</p>
+                    </li>
+                    <li class="menu-item">
+                        <picture class="menu-image-wrapper">
+                            <source srcset="images/lemon-pie-small.png" media="(max-width: 480px)">
+                            <img src="images/lemon_pie-ia-2.png" alt="lemon-pie_menu-image" loading="lazy">
+                        </picture>
+                        <h3 class="name">Lemon pie</h3>
+                        <p class="text" aria-label="Descripción Lemon pie">Base crocante, relleno cremoso de limón y cobertura de merengue dorado.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Testimonials section -->
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Reseñas</h2>
+            <div class="section-content">
+                <div class="slider-container swiper" aria-label="Testimonios de clientes" role="region">
+                    <div class="slider-wrapper">
+                        <div class="testimonials-list swiper-wrapper">
+                            <div class="testimonial swiper-slide" role="listitem" aria-label="Testimonial de Lukáš Hanzlík">
+                                <picture class="user-image-wrapper">
+                                    <source srcset="images/Lukáš-Hanzlík-small.jpg" media="(max-width: 600px)">
+                                    <img src="images/Lukáš-Hanzlík.jpg" alt="Foto de Lukáš-Hanzlík" loading="lazy">
+                                </picture>
+                                <h3 class="user-name">Lukáš Hanzlík</h3>
+                                <i class="feedback">"Esta panadería es adorable. Es de esos lugares donde querés comprar todo y subir fotos a Instagram. La verdadera magia está en los dulces y tortas. No es una repostería promedio: son pequeñas obras de arte."</i>
+                            </div>
+                            <div class="testimonial swiper-slide" role="listitem" aria-label="Testimonial de Robert Quinn">
+                                <picture class="user-image-wrapper">
+                                        <source srcset="images/robert-quinn-xs.jpg" media="(max-width: 600px)">
+                                        <img src="images/robert-quinn.jpg" alt="Foto de Robert Quinn" loading="lazy">
+                                </picture>
+                                <h3 class="user-name">Robert Quinn</h3>
+                                <i class="feedback">"Lugar perfecto para desayunar o tomar un café. Deliciones pasteles, ambiente encantador y un servicio súper amable."</i>
+                            </div>
+                            <div class="testimonial swiper-slide" role="listitem" aria-label="Testimonial de Gerardo Parzola">
+                                <picture class="user-image-wrapper">
+                                    <source srcset="images/gerardo-parzola-small.jpg" media="(max-width: 600px)">
+                                    <img src="images/gerardo-parzola.jpg" alt="Foto de Gerardo Parzola" loading="lazy">
+                                </picture>
+                                <h3 class="user-name">Gerardo Barzola</h3>
+                                <i class="feedback">"Nos atendieron de maravillas. Tomamos un rico café y unos tostados increíbles. Muy amables."</i>
+                            </div>
+                            <div class="testimonial swiper-slide" role="listitem" aria-label="Testimonial de LukášHanzlík">
+                                <picture class="user-image-wrapper">
+                                    <source srcset="images/hias-k-small.jpg" media="(max-width: 600px)">
+                                    <img src="images/hias-k.jpg" alt="Imagen de Hias K" loading="lazy">
+                                </picture>
+                                <h3 class="user-name">Hias K</h3>
+                                <i class="feedback">"Lugar agradable, gente simpática y excelente café con repostería artesanal."</i>
+                            </div>
+                            <div class="testimonial swiper-slide" role="listitem" aria-label="Testimonial de Boris Pfeferman">
+                                <picture class="user-image-wrapper">
+                                    <source srcset="images/boris-pfeferman-small.jpg" media="(max-width: 600px)">
+                                    <img src="images/boris-pfeferman.jpg" alt="Imagen de Boris Pfeferman" loading="lazy">
+                                </picture>
+                                <h3 class="user-name">Boris Pfefferman</h3>
+                                <i class="feedback">"Muy buena atención, compramos facturas y bizcochitos muy ricos."</i>
+                            </div>
+                        </div>
+                        <!-- Controles de Swiper -->
+                        <div class="swiper-pagination" role="presentation" aria-hidden="true"></div>
+                        <div class="swiper-slide-button swiper-button-prev" role="presentation" aria-hidden="true"></div>
+                        <div class="swiper-slide-button swiper-button-next" role="presentation" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+        <!-- Gallery section -->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Galería</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <picture class="gallery-image-wrapper">
+                            <source srcset="images/local-afuera-small.jpg" media="(max-width: 480px)">
+                            <img src="images/nevada-small.jpg" alt="gallery-image" loading="lazy">
+                        </picture>
+                    <li class="gallery-item">
+                        <picture class="gallery-image-wrapper">
+                            <source srcset="images/submarino-small.jpg" media="(max-width: 480px)">
+                            <img src="images/submarino-1.jpg" alt="gallery-image" loading="lazy">
+                        </picture>
+                    </li>
+                    <li class="gallery-item">
+                        <picture class="gallery-image-wrapper">
+                            <source srcset="images/mesa-small.jpg" media="(max-width: 480px)">
+                            <img src="images/mesa-m.jpg" alt="gallery-image" loading="lazy">
+                        </picture>
+                    </li>
+                    <li class="gallery-item">
+                        <picture class="gallery-image-wrapper">
+                            <source srcset="images/facturas-small.jpg" media="(max-width: 480px)">
+                            <img src="images/facturas-medium.jpg" alt="gallery-image" loading="lazy">
+                        </picture>
+                    </li>
+                    <li class="gallery-item">
+                        <picture class="gallery-image-wrapper">
+                            <source srcset="images/cañones-small.jpg" media="(max-width: 480px)">
+                            <img src="images/cañones-medium.jpg" alt="gallery-image" loading="lazy">
+                        </picture>
+                    </li>
+                    <li class="gallery-item">
+                        <picture class="gallery-image-wrapper">
+                            <source srcset="images/pan-frances-small.jpg" media="(max-width: 480px)">
+                            <img src="images/facturas-3.jpg" alt="gallery-image" loading="lazy">
+                        </picture>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Location section -->
+        <section class="location-section" id="location">
+            <div class="section-content">
+                <h2 class="section-title">¿Dónde estamos?</h2>
+                <p class="location-text">Nos encontramos en Gobernador Gregores. <span>¡Visitanos!</span></p>
+                <div class="map-container">
+                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2630.789501115893!2d-70.26101688734195!3d-48.74771767119772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdbf89baf181e655%3A0xf3dd5bf3fd8a0323!2sPanader%C3%ADa%20San%20Cayetano!5e0!3m2!1ses-419!2sar!4v1755199981866!5m2!1ses-419!2sar"     
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                            <p>Antártida Argentina 25, Gobernador Gregores.</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class=" fa-regular fa-envelope"></i>
+                            <p>panasancayetano@gmail.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                            <p> (54) 2962-423873</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                            <p>Lunes a Viernes: 07:00 - 21:00 <br> Sábados y Domingos: 08:00 - 21:00 </p>
+                    </li>
+                </ul>
+
+                <form id="form" action="send.php" method="post" class="contact-form">
+                    <input name="name" type="text" id ="name" placeholder="Nombre completo" class="form-input" autocomplete="name" required>
+                    <input name= "email" type="email" id="email" placeholder="Correo electrónico" class="form-input" autocomplete="email" required>
+                    <textarea name="message" id="message" placeholder="Escribe tu mensaje aquí..." class="form-input" required></textarea>
+                    <button class="submit-button" type="submit" autocomplete="off">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer section -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2025 Panadería San Cayetano. <span class="break-line">Todos los derechos reservados.</span>
+                <div class="social-link-list">
+                    <a href="https://www.facebook.com/profile.php?id=61561064978610" target="_blank" class="social-link facebook" aria-label="Facebook de Panadería San Cayetano"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/panaderiasancayetano25?igsh=NGhhMDBrd2k3OG8=" target="_blank" class="social-link instagram" aria-label="Instagram de Panadería San Cayetano"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="social-link twitter" aria-label="Twitter de Panadería San Cayetano"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Política y privacidad</a>
+                    <a href="#" class="policy-link">Política de reembolso</a>
+                    <a href="#" class="policy-link">Términos de servicio</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+
+    <!-- Swiper Reducido JS -->
+    <script src="swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Linking custom script -->
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Miniver';
+    src: url("fonts/fonts-woff2/Miniver.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/fonts-woff2/Poppins-Regular.woff2") format("woff2") ;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/fonts-woff2/Poppins-Medium.woff2") format("woff2") ;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/fonts-woff2/Poppins-SemiBold.woff2") format("woff2") ;
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/fonts-woff2/Poppins-Bold.woff2") format("woff2") ;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/fonts-woff2/Poppins-Italic.woff2") format("woff2") ;
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Font Awesome Brands */
+@font-face {
+    font-family: "Font Awesome 7 Brands";
+    src: url("font-awesome/webfonts/fa-brands-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; /* evita bloquear render */
+}
+
+/* Font Awesome Regular */
+@font-face {
+    font-family: "Font Awesome 7 Free";
+    src: url("font-awesome/webfonts/fa-regular-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Font Awesome Solid */
+@font-face {
+    font-family: "Font Awesome 7 Free";
+    src: url("font-awesome/webfonts/fa-solid-900.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Core FA setup reducido */
+.fa, .fas, .far, .fab, .fa-solid, .fa-regular, .fa-brands {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-feature-settings: normal;
+    font-style: normal;
+    font-synthesis: none;
+    font-variant: normal;
+    line-height: 1;
+    text-align: center;
+    text-rendering: auto;
+    width: 1.25em;
+    /* NO asignar font-weight aquí, debe heredarse de --fa-style */
+    font-weight: var(--fa-style);
+}
+
+/* Weight + family por tipo */
+.fa-regular, .far { --fa-style: 400; --_fa-family: "Font Awesome 7 Free"; font-family: var(--_fa-family); }
+.fa-solid, .fas { --fa-style: 900; --_fa-family: "Font Awesome 7 Free"; font-family: var(--_fa-family); }
+.fa-brands, .fab { --fa-style: 400; --_fa-family: "Font Awesome 7 Brands"; font-family: var(--_fa-family); }
+
+/* ::before content */
+:is(.fas, .far, .fab, .fa-solid, .fa-regular, .fa-brands, .fa):before {
+    content: var(--fa);
+    content: var(--fa)/"";
+}
+
+/* Alias de iconos que usás */
+.fa-bars, .fa-navicon { --fa:"\f0c9"; }
+.fa-xmark { --fa:"\f00d"; }
+.fa-envelope { --fa:"\f0e0"; }
+.fa-clock { --fa:"\f017"; }
+.fa-location-crosshairs { --fa:"\f601"; }
+.fa-phone { --fa:"\f095"; }
+.fa-facebook { --fa:"\f09a"; }
+.fa-x-twitter { --fa:"\e61b"; }
+.fa-instagram { --fa:"\f16d"; }
+
+
